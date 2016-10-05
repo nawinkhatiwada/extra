@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/appBar">
+
+
+            <RelativeLayout
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:gravity="center_vertical">
+
+                <com.hamrokitchen.views.FontIconView
+                    android:id="@+id/icPerson"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/et_margin"
+                    android:text="@string/ic_font_user"
+                    android:textSize="@dimen/text_icon_size" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/icPerson"
+                    android:background="@android:color/transparent"
+                    android:gravity="bottom"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:text="Nawin Khatiwada"
+                    android:textSize="@dimen/text_large" />
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/icPerson"
+                    android:background="@color/border" />
+
+                <com.hamrokitchen.views.FontIconView
+                    android:id="@+id/icEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view1"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/et_margin"
+                    android:text="@string/ic_font_mail"
+                    android:textSize="@dimen/text_icon_size" />
+
+                <EditText
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view1"
+                    android:layout_toEndOf="@+id/icPerson"
+                    android:layout_toRightOf="@+id/icPerson"
+                    android:background="@android:color/transparent"
+                    android:gravity="bottom"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:text="nawin.khatiwada@gmail.com"
+                    android:textSize="@dimen/text_large" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/icEmail"
+                    android:background="@color/border" />
+
+                <RelativeLayout
+                    android:id="@+id/rlPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view2">
+
+                    <com.hamrokitchen.views.FontIconView
+                        android:id="@+id/icPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingStart="@dimen/activity_horizontal_margin"
+                        android:paddingTop="@dimen/et_margin"
+                        android:text="@string/ic_font_password"
+                        android:textSize="@dimen/text_icon_size" />
+
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/icPassword"
+                        android:layout_toLeftOf="@+id/showPassword"
+                        android:layout_toRightOf="@+id/icPassword"
+                        android:background="@android:color/transparent"
+                        android:maxLines="1"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        android:text="*****************"
+                        android:textSize="@dimen/text_large" />
+
+                    <TextView
+                        android:id="@+id/showPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        android:text="SHOW" />
+
+                    <View
+                        android:id="@+id/view3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/icPassword"
+                        android:background="@color/border" />
+
+                </RelativeLayout>
+
+
+                <com.hamrokitchen.views.FontIconView
+                    android:id="@+id/icDOB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlPassword"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingStart="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/et_margin"
+                    android:text="@string/ic_font_dob"
+                    android:textSize="@dimen/text_icon_size" />
+
+                <EditText
+                    android:id="@+id/dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rlPassword"
+                    android:layout_toEndOf="@+id/icDOB"
+                    android:layout_toRightOf="@+id/icDOB"
+                    android:background="@android:color/transparent"
+                    android:gravity="bottom"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:text="12/13/1404"
+                    android:textSize="@dimen/text_large" />
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/icDOB"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:background="@color/border" />
+
+                <com.hamrokitchen.views.FontIconView
+                    android:id="@+id/icGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view4"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingStart="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/et_margin"
+                    android:text="@string/ic_font_sex"
+                    android:textSize="@dimen/text_icon_size" />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view4"
+                    android:layout_toEndOf="@+id/icGender"
+                    android:layout_toRightOf="@+id/icGender"
+                    android:background="@android:color/transparent"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:text="Male"
+                    android:textSize="@dimen/text_large" />
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/icGender"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:background="@color/border"
+                    android:gravity="center_vertical" />
+
+                <RelativeLayout
+                    android:id="@+id/rlLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view5">
+
+                    <com.hamrokitchen.views.FontIconView
+                        android:id="@+id/icLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingStart="@dimen/activity_horizontal_margin"
+                        android:paddingTop="@dimen/et_margin"
+                        android:text="@string/ic_font_location"
+                        android:textSize="@dimen/text_icon_size" />
+
+
+                    <EditText
+                        android:id="@+id/location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/icLocation"
+                        android:layout_toLeftOf="@+id/showLocation"
+                        android:layout_toRightOf="@+id/icLocation"
+                        android:background="@android:color/transparent"
+                        android:maxLines="1"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        android:text="Lalitpur ,Nepal"
+                        android:textSize="@dimen/text_large" />
+
+                    <Button
+                        android:id="@+id/showLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/colorPrimary"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        android:text="Use Current Location"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size" />
+
+                    <View
+                        android:id="@+id/view6"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/icLocation"
+                        android:background="@color/border" />
+
+                </RelativeLayout>
+
+                <com.hamrokitchen.views.FontIconView
+                    android:id="@+id/icPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlLocation"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingStart="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/et_margin"
+                    android:text="@string/ic_font_phone"
+                    android:textSize="@dimen/text_icon_size" />
+
+
+                <EditText
+                    android:id="@+id/etPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlLocation"
+                    android:layout_toEndOf="@+id/icPhone"
+                    android:layout_toRightOf="@+id/icPhone"
+                    android:background="@android:color/transparent"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:text="Male"
+                    android:textSize="@dimen/text_large" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:layout_below="@+id/etPhone" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</layout>
